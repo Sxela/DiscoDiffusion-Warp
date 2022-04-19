@@ -2,13 +2,6 @@
 
 [![Disco Diffusion v5.2 - Warp](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sxela/DiscoDiffusion-Warp/blob/main/Disco_Diffusion_v5_2_Warp.ipynb)
 
-If you like what I'm doing you can
-- follow me on [twitter](https://twitter.com/devdef)
-- check my collections at [opensea](https://opensea.io/collection/ai-scrapers)
-- tip me on [patreon](https://www.patreon.com/sxela) 
-
-Thank you for being awesome!
-
 # About
 This version improves video init. You can now generate optical flow maps from input videos, and use those to:
 - warp init frames for consistent style 
@@ -41,3 +34,10 @@ blend_mode:
 ## TODO: add automatic flow map management (i.e. create only when needed)
 
 This is a variation of the awesome [DiscoDiffusion colab](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb#scrollTo=Changelog)
+
+If you like what I'm doing you can
+- follow me on [twitter](https://twitter.com/devdef)
+- check my collections at [opensea](https://opensea.io/collection/ai-scrapers)
+- tip me on [patreon](https://www.patreon.com/sxela) 
+
+Thank you for being awesome!
