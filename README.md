@@ -6,6 +6,7 @@ If you like what I'm doing you can
 - follow me on [twitter](https://twitter.com/devdef)
 - check my collections at [opensea](https://opensea.io/collection/ai-scrapers)
 - tip me on [patreon](https://www.patreon.com/sxela) 
+
 Thank you for being awesome!
 
 # About
