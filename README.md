@@ -10,6 +10,20 @@ This version improves video init. You can now generate optical flow maps from in
 ##Init warping
 The feature works like this: we take the 1st frame, diffuse it as usual as an image input with fixed skip steps. Then we warp in with its flow map into the 2nd frame and blend it with the original raw video 2nd frame. This way we get the style from heavily stylized 1st frame (warped accordingly) and content from 2nd frame (to reduce warping artifacts and prevent overexposure)
 
+# Changelog
+
+### 21.04.2022: 
+- Add warp parameteres to saved settings
+### 16.04.2022:
+- Use width_height size instead of input video size
+- Bring back adabins and 2d/3d anim modes
+- Install RAFT only when video input animation mode is selected
+- Generate optical flow maps only for video input animation mode even with flow_warp unchecked, so you can still save an obtical flow blended video later
+- Install AdaBins for 3d mode only (should do the same for midas)
+- Add animation mode check to create video tab 
+### 15.04.2022: Init
+
+
 ### Settings: 
 (Located in animation settings tab)
 
