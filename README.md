@@ -12,6 +12,8 @@ The feature works like this: we take the 1st frame, diffuse it as usual as an im
 
 # Changelog
 
+### 22.04.2022:
+- Add ViT-L/14@336px
 ### 21.04.2022: 
 - Add warp parameteres to saved settings
 ### 16.04.2022:
