@@ -3,15 +3,26 @@
 [![Disco Diffusion v5.2 - Warp](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sxela/DiscoDiffusion-Warp/blob/main/Disco_Diffusion_v5_2_Warp.ipynb)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=sxela_ddwarp_repo)
 
+[Discuss in Discord](https://discord.gg/Vf5wRXSy)
+
 # About
 This version improves video init. You can now generate optical flow maps from input videos, and use those to:
 - warp init frames for consistent style 
 - warp processed frames for less noise in final video
 
-##Init warping
+## Init warping
 The feature works like this: we take the 1st frame, diffuse it as usual as an image input with fixed skip steps. Then we warp in with its flow map into the 2nd frame and blend it with the original raw video 2nd frame. This way we get the style from heavily stylized 1st frame (warped accordingly) and content from 2nd frame (to reduce warping artifacts and prevent overexposure)
 
 # Changelog
+
+### 18.05.2022
+- Update 512x512 and secondary model urls
+
+### 17.05.2022
+- Remove consistency checking for stability
+
+### 15.05.2022
+- Add 256x256 comis faces model
 
 ### 22.04.2022:
 - Add ViT-L/14@336px
@@ -35,7 +46,7 @@ Video Optical Flow Settings:
 - flow_blend: 0 - you get raw input, 1 - you get warped diffused previous frame 
 - check_consistency: check forward-backward flow consistency (uncheck unless getting too many warping artifacts)
 
-##Output warping
+## Output warping
 This feature is plain simple - we just take any frame, warp in to the next frame, blend with real next frame, get smooth noise-free result.
 
 *note: this notebook completely disables adabins depth estimator and 2d/3d animation due to import name conflicts I'm too lazy to resolve at the moment 😸
