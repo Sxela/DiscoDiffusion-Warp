@@ -71,7 +71,11 @@ blend_mode:
 - check_consistency: use consistency maps (may prevent warping artfacts)
 - blend: 0 - you get raw 2nd frame, 1 - you get warped 1st frame
 
-## TODO: add automatic flow map management (i.e. create only when needed)
+## TODO: 
+- [x] Add automatic flow map management (i.e. create only when needed)
+- [x] Add error reporting for missing inputs, flows, frames
+- [ ] Add turbo
+- [ ] Add turbosmooth
 
 This is a variation of the awesome [DiscoDiffusion colab](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb#scrollTo=Changelog)
 
