@@ -52,6 +52,10 @@ The feature works like this: we take the 1st frame, diffuse it as usual as an im
 - Add animation mode check to create video tab 
 ### 15.04.2022: Init
 
+#
+
+## Optical flow input warping
+
 ### Settings: 
 (Located in animation settings tab)
 
@@ -76,6 +80,8 @@ blend_mode:
 - [x] Add error reporting for missing inputs, flows, frames
 - [ ] Add turbo
 - [ ] Add turbosmooth
+
+#
 
 This is a variation of the awesome [DiscoDiffusion colab](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb#scrollTo=Changelog)
 
