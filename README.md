@@ -1,9 +1,9 @@
-# Disco Diffusion v5.2 - Warp
+# Disco Diffusion v5.2 - WarpFusion
 
 [![Disco Diffusion v5.2 - Warp](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sxela/DiscoDiffusion-Warp/blob/main/Disco_Diffusion_v5_2_Warp.ipynb)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=sxela_ddwarp_repo)
 
-[Discuss in Discord](https://discord.gg/Vf5wRXSy)
+[Discuss on Discord](https://linktr.ee/devdef) (keeping it on linktree now so it's always an active link)
 
 # About
 This version improves video init. You can now generate optical flow maps from input videos, and use those to:
@@ -14,6 +14,21 @@ This version improves video init. You can now generate optical flow maps from in
 The feature works like this: we take the 1st frame, diffuse it as usual as an image input with fixed skip steps. Then we warp in with its flow map into the 2nd frame and blend it with the original raw video 2nd frame. This way we get the style from heavily stylized 1st frame (warped accordingly) and content from 2nd frame (to reduce warping artifacts and prevent overexposure)
 
 # Changelog
+
+### 27.05.2022
+- Add existing flow check, now generate only if no flow found
+- Add comprehensive error reporting for missing video_init, video frames, flow files
+- Fix non alphanumeric batch names not working 
+- Fix frames not being sorted before creating output video
+- Fix incorrect RAFT root foder on local machines 
+- Add storing RAFT on gdrive
+
+### 23.05.2022
+- Add [colab](https://github.com/Sxela/DiscoDiffusion-Warp/blob/main/image_morphing_3d.ipynb) for 3d animation only 
+
+### 22.05.2022:
+- Add saving frames and flow to google drive (suggested by Chris the Wizard#8082)
+- Add back consistency checking
 
 ### 18.05.2022
 - Update 512x512 and secondary model urls
@@ -37,7 +52,6 @@ The feature works like this: we take the 1st frame, diffuse it as usual as an im
 - Add animation mode check to create video tab 
 ### 15.04.2022: Init
 
-
 ### Settings: 
 (Located in animation settings tab)
 
@@ -48,8 +62,6 @@ Video Optical Flow Settings:
 
 ## Output warping
 This feature is plain simple - we just take any frame, warp in to the next frame, blend with real next frame, get smooth noise-free result.
-
-*note: this notebook completely disables adabins depth estimator and 2d/3d animation due to import name conflicts I'm too lazy to resolve at the moment 😸
 
 ### Settings: 
 (located in create video tab)
@@ -63,9 +75,8 @@ blend_mode:
 
 This is a variation of the awesome [DiscoDiffusion colab](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb#scrollTo=Changelog)
 
-If you like what I'm doing you can
+If you like what I'm doing you can check my linktree
 - follow me on [twitter](https://twitter.com/devdef)
-- check my collections at [opensea](https://opensea.io/collection/ai-scrapers)
 - tip me on [patreon](https://www.patreon.com/sxela) 
 
 Thank you for being awesome!
