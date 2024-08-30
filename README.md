@@ -1,5 +1,16 @@
 # Disco Diffusion v5.2 - WarpFusion
 
+[![][github-release-shield]][github-release-link]
+[![][github-release-date-shield]][github-release-link]
+[![][github-downloads-shield]][github-downloads-link]
+
+
+[github-release-shield]: https://img.shields.io/github/v/release/Sxela/DiscoDiffusion-Warp?style=flat&sort=semver
+[github-release-link]: https://github.com/Sxela/DiscoDiffusion-Warp/releases
+[github-release-date-shield]: https://img.shields.io/github/release-date/Sxela/DiscoDiffusion-Warp?style=flat
+[github-downloads-shield]: https://img.shields.io/github/downloads/Sxela/DiscoDiffusion-Warp/total?style=flat
+[github-downloads-link]: https://github.com/Sxela/DiscoDiffusion-Warp/releases
+
 [![Disco Diffusion v5.2 - Warp](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sxela/DiscoDiffusion-Warp/blob/main/Disco_Diffusion_v5_2_Warp.ipynb)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=sxela_ddwarp_repo)
 
